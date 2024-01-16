@@ -7,3 +7,13 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+require "faker"
+
+# Create 5 greetings
+
+5.times do
+  Greeting.create!(
+    message: "Hello, #{Faker::Name.name}!"
+  )
+end
