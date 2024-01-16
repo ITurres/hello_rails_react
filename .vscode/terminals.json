@@ -1,0 +1,44 @@
+{
+  "autorun": true,
+  "focus": true,
+  "terminals": [
+    {
+      "name": "Commit",
+      "type": "bash",
+      "color": "terminal.ansiBlue",
+      "icon": "git-commit",
+      "command": "git branch -a"
+    },
+    {
+      "name": "Rails Dev Server",
+      "type": "bash",
+      "color": "terminal.ansiMagenta",
+      "icon": "server-process"
+    },
+    {
+      "name": "React Dev Server",
+      "type": "bash",
+      "color": "terminal.ansiCyan",
+      "icon": "browser",
+      "command": "npm start"
+    },
+    {
+      "name": "Jest",
+      "type": "bash",
+      "color": "terminal.ansiYellow",
+      "icon": "microscope"
+    },
+    {
+      "name": "RSpec",
+      "type": "bash",
+      "color": "terminal.ansiRed",
+      "icon": "microscope"
+    },
+    {
+      "name": "Linters",
+      "type": "bash",
+      "color": "terminal.ansiGreen",
+      "icon": "checklist"
+    }
+  ]
+}
