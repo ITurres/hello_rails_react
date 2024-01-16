@@ -1,26 +1,25 @@
 const path = require('path');
-// eslint-disable-next-line
 const webpack = require('webpack');
 
 module.exports = {
-  mode: 'production',
+  mode: 'development',
   devtool: 'source-map',
+  stats: 'minimal',
   entry: {
     application: './app/javascript/application.js',
   },
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.(js)$/,
         exclude: /node_modules/,
         use: ['babel-loader'],
       },
     ],
   },
   output: {
-    filename: '[name].js',
-    sourceMapFilename: '[file].map',
-    chunkFormat: 'module',
+    filename: '[name].[contenthash].js',
+    sourceMapFilename: '[name].[contenthash].js.map',
     path: path.resolve(__dirname, 'app/assets/builds'),
   },
   plugins: [
